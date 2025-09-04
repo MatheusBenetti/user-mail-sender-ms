@@ -1,6 +1,7 @@
 spring:
   application:
     name: email
+
   datasource:
     url: jdbc:postgresql://localhost:5433/ms_email_ms
     username: postgres
@@ -9,11 +10,19 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
+    ddl-auto: update
     show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  rabbitmq:
+    addresses: amqps://campbell.lmq.cloudamqp.com
+    username: arueceks
+    password: vIjvTpghQQdLXJq_JCMknP4tGNR6DkXD
+    virtual-host: arueceks
+    ssl:
+      enabled: true
 
 server:
   port: 8080

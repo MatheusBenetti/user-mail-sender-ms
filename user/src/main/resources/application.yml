@@ -1,11 +1,13 @@
 spring:
   application:
     name: user
+
   datasource:
     url: jdbc:postgresql://localhost:5435/ms-user-ms
     username: postgres-user
     password: postgres-password
     driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
