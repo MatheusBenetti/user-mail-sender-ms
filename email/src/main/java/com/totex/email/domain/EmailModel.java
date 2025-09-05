@@ -18,7 +18,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class EmailModel {
 
-    private final long serialVersionUUID = 1L;
+    private final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
